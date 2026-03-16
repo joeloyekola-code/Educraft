@@ -272,16 +272,3 @@ html {
 .course-card {
   padding: var(--spacing-lg);
 }
-/* Only text inside featured course cards gets padding */
-.featured-courses .card p,
-.featured-courses .card h3,
-.featured-courses .card span {
-  display: block;        /* ensures padding works correctly */
-  padding-left: 16px;    /* left padding only */
-  padding-right: 16px;   /* right padding only */
-  padding-top: 8px;      /* optional: space from image above */
-  margin: 0;             /* remove any default margin */
-  box-sizing: border-box;
-  line-height: 1.5;
-}
-}
