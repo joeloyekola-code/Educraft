@@ -269,3 +269,6 @@ html {
   background: var(--color-primary);
   color: white;
 }
+.course-card {
+  padding: var(--spacing-lg);
+}
