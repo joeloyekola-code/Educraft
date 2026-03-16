@@ -272,3 +272,12 @@ html {
 .course-card {
   padding: var(--spacing-lg);
 }
+/* Featured Course Card Text Padding */
+.featured-courses .card p,
+.featured-courses .card h3,
+.featured-courses .card span {
+  padding: 0 16px;       /* horizontal padding only */
+  margin: 8px 0;         /* optional vertical spacing */
+  box-sizing: border-box; 
+  line-height: 1.5;      /* makes text easier to read */
+}
