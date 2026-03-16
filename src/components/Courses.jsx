@@ -4,6 +4,15 @@ import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { courses } from '../data/courses';
 import './Courses.css';
+<p
+  style={{
+    padding: "8px 16px",  // top/bottom 8px, left/right 16px
+    margin: 0,             // remove default margin
+    lineHeight: 1.5        // improves readability
+  }}
+>
+  Your course description here
+</p>
 
 const Courses = () => {
   const ref = useRef(null);
