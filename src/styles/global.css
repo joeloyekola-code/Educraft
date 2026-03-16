@@ -268,13 +268,17 @@ html {
 ::selection {
   background: var(--color-primary);
   color: white;
-}/* Force text under image in featured course cards to have padding */
+/* Bulletproof text padding under images in featured course cards */
 .featured-courses .card > *:not(img) {
-  display: block;        /* ensures padding works */
-  padding: 8px 16px;     /* top + horizontal padding */
-  margin: 0;             /* reset any default margin */
-  box-sizing: border-box;
+  position: relative;        /* ensures padding works even if parent uses absolute/flex */
+  display: block;            /* makes padding apply correctly */
+  padding: 8px 16px;         /* top + horizontal padding */
+  margin: 0;                 /* remove default margin */
+  box-sizing: border-box;    /* padding stays inside element */
+  max-width: 100%;           /* prevents text from overflowing edges */
+  line-height: 1.5;          /* improves readability */
+  z-index: 1;                /* ensures it sits above backgrounds if any */
+}
   width: auto;           /* allows text to shrink from edges */
   line-height: 1.5;      /* improves readability */
-}
 }
