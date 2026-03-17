@@ -159,28 +159,26 @@ const Hero = () => {
           </motion.form>
 
           <motion.div className="hero-video" variants={itemVariants}>
-            <div class="video-container">
+            <div className="video-container">
               <div className="video-placeholder">
-                <img 
-                  src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&auto=format&fit=crop" 
-                  alt="Instructor teaching" 
-                  className="instructor-image"
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/bI6q16ffdgQ?si=uELiNZLTv0_O3rsH"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                   style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
                     position: 'absolute',
                     top: 0,
-                    left: 0
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    border: 'none'
                   }}
                 />
-                <motion.button
-                  className="play-button"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  ▶
-                </motion.button>
               </div>
               <motion.div
                 className="watch-label"

@@ -61,6 +61,10 @@
     grid-template-columns: 1fr;
   }
 
+  .path-card {
+    padding: 1.25rem;
+  }
+
   .path-meta {
     flex-direction: column;
     gap: 0.5rem;

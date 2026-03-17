@@ -111,6 +111,10 @@
     grid-template-columns: 1fr;
   }
 
+  .pricing-card {
+    padding: 1.25rem;
+  }
+
   .pricing-card.popular {
     transform: scale(1);
   }

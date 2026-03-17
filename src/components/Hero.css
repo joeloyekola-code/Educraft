@@ -122,6 +122,9 @@
 
 .video-container {
   position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: var(--radius-2xl);
 }
 
 .video-placeholder {
@@ -201,6 +204,18 @@
 
   .hero-buttons {
     flex-direction: column;
+  }
+
+  .hero-categories {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .category-tag {
+    font-size: 0.8125rem;
+    padding: 0.5rem 1rem;
   }
 
   .hero-title {
